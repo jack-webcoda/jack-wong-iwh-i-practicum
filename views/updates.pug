@@ -12,13 +12,17 @@ html
                 h1 Update Custom Object Form
             a.my-4.d-block(href="/") Return to the homepage
             form(method="POST" action="/update-cobj")
-                .mb-3
-                    label(for="airline_name") Airline Name
+                .mb-3.d-flex.gap-2.align-items-center
+                    label(for="airline_name", style={width:'160px'}).flex-shrink-0 Airline Name
                     input.form-control(type="text" name="airline_name" id="airline_name" required)
-                .mb-3
-                    label(for="airline_code") Airline Code
+                .mb-3.d-flex.gap-2.align-items-center
+                    label(for="airline_code", style={width:'160px'}).flex-shrink-0 Airline Code
                     input.form-control(type="text" name="airline_code" id="airline_code" required)
-                .mb-3
-                    label(for="country") Country
+                .mb-3.d-flex.gap-2.align-items-center
+                    label(for="country", style={width:'160px'}).flex-shrink-0 Country
                     input.form-control(type="text" name="country" id="country" required)
-                button.btn.btn-primary(type="submit") Submit
+                .mb-3.d-flex.gap-2.align-items-center
+                    label(for="website", style={width:'160px'}).flex-shrink-0 Website URL
+                    input.form-control(type="text" name="website" id="website" required)
+                .mt-4
+                    button.btn.btn-primary(type="submit") Submit
