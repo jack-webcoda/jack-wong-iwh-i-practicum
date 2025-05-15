@@ -22,6 +22,7 @@ html
                 tbody
                     each airline in data
                         tr
-                            td #{airline.properties.airline_name}
+                            td
+                                a(href=`${airline.properties.website}`, target="_blank") #{airline.properties.airline_name}
                             td #{airline.properties.airline_code}
                             td #{airline.properties.country}
